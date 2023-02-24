@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
 
-@mixin container-mobile {
-  padding: 0.5rem;
-  width: 23.4375rem;
+@mixin container-mobile($mobile-width: 25rem) {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: $mobile-width;
   margin: 0 auto;
 }
 
-$color-primary-grey: #999999;
+$color-secondary-text: #555555;
+$color-h6: #ff3998;
+$color-primary-text: #111111;
+$regular-padding-bottom-mobile: 1.5rem;
 
 body {
   header {
@@ -27,12 +32,86 @@ body {
       justify-content: center;
       align-items: center;
       width: 1.5rem;
-      gap: 0.25rem;
+      gap: 0.3rem;
       span {
-        background-color: $color-primary-grey;
+        background-color: #999999;
         height: 0.25rem;
         width: 1.5rem;
         border-radius: 0.5625rem;
+      }
+    }
+  }
+  .sign-up {
+    @include container-mobile;
+    padding-top: 4rem;
+    padding-right: 5.3rem;
+    padding-bottom: 5rem;
+    background-image: url(assets/graphic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 190px -20px;
+
+    h6 {
+      color: $color-h6;
+      font-size: 1rem;
+      letter-spacing: 0.0938rem;
+      font-weight: bolder;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: bolder;
+      font-size: 42px;
+      padding: $regular-padding-bottom-mobile 0;
+      color: $color-primary-text;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: $color-secondary-text;
+      padding-bottom: $regular-padding-bottom-mobile;
+    }
+    .sign-button {
+      width: 11.4rem;
+      height: 4.5rem;
+      border-radius: 40px;
+      background: white;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 555;
+        border-radius: inherit;
+        background: linear-gradient(
+          45deg,
+          rgb(194, 28, 209),
+          red,
+          orange,
+          rgb(197, 178, 69)
+        );
+      }
+      button {
+        position: absolute;
+        width: 10.9rem;
+        height: 4rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 666;
+        border-radius: inherit;
+        background: white;
+        border: none;
+        margin: 4px;
+        font-size: larger;
+        text-align: center;
+        vertical-align: center;
+        font-weight: 500px;
       }
     }
   }
