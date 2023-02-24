@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 body header {
@@ -100,4 +100,26 @@ body .sign-up .sign-button button {
   text-align: center;
   vertical-align: center;
   font-weight: 500px;
+}
+body .free-nft {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 25rem;
+  margin: 0 auto;
+  color: #111111;
+  display: flex;
+  height: 19rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 30px;
+  padding-bottom: 1.5rem;
+  background: linear-gradient(75deg, #ff7784, #eb9457, #d3c393);
+}
+body .free-nft h2 {
+  font-weight: lighter;
+  font-size: 36px;
+}
+body .free-nft p {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */

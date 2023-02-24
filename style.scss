@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 @mixin container-mobile($mobile-width: 25rem) {
@@ -113,6 +113,25 @@ body {
         vertical-align: center;
         font-weight: 500px;
       }
+    }
+  }
+  .free-nft {
+    @include container-mobile;
+    color: $color-primary-text;
+    display: flex;
+    height: 19rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 30px;
+    padding-bottom: $regular-padding-bottom-mobile;
+    background: linear-gradient(75deg, #ff7784, #eb9457, #d3c393);
+    h2 {
+      font-weight: lighter;
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
     }
   }
 }
