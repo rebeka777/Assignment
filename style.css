@@ -122,4 +122,35 @@ body .free-nft h2 {
 }
 body .free-nft p {
   font-size: 18px;
+}
+body .companies {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 25rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  grid-template-areas: "Boomerang Blimp" "qrco Droplet";
+  row-gap: 1.5rem;
+  -moz-column-gap: 2.7rem;
+       column-gap: 2.7rem;
+}
+body .companies .Blimp {
+  grid-area: Blimp;
+}
+body .companies .qrco {
+  grid-area: qrco;
+}
+body .companies .Droplet {
+  grid-area: Droplet;
+}
+body .companies .OpenDoor {
+  display: none;
+}
+body .companies .Boomerang {
+  grid-area: Boomerang;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

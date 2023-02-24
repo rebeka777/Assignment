@@ -134,4 +134,32 @@ body {
       font-size: 18px;
     }
   }
+  .companies {
+    @include container-mobile;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    grid-template-areas: 'Boomerang Blimp' 'qrco Droplet';
+    row-gap: 1.5rem;
+    column-gap: 2.7rem;
+
+    .Blimp {
+      grid-area: Blimp;
+    }
+    .qrco {
+      grid-area: qrco;
+    }
+    .Droplet {
+      grid-area: Droplet;
+    }
+    .OpenDoor {
+      display: none;
+    }
+    .Boomerang {
+      grid-area: Boomerang;
+      overflow: hidden;
+    }
+  }
 }
