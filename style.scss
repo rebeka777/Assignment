@@ -7,7 +7,7 @@
   /*overflow: hidden;*/
 }
 
-@mixin container-mobile($mobile-width: 25rem) {
+@mixin container-mobile($mobile-width: 26rem) {
   padding-left: 2rem;
   padding-right: 2rem;
   width: $mobile-width;
@@ -44,7 +44,7 @@ body {
   .sign-up {
     @include container-mobile;
     padding-top: 4rem;
-    padding-right: 5.3rem;
+    padding-right: 6.5rem;
     padding-bottom: 5rem;
     background-image: url(assets/graphic.png);
     background-size: contain;
@@ -143,7 +143,7 @@ body {
     padding-bottom: 3.5rem;
     grid-template-areas: 'Boomerang Blimp' 'qrco Droplet';
     row-gap: 1.5rem;
-    column-gap: 2.7rem;
+    column-gap: 3.5rem;
 
     .Blimp {
       grid-area: Blimp;
@@ -160,6 +160,88 @@ body {
     .Boomerang {
       grid-area: Boomerang;
       overflow: hidden;
+    }
+  }
+  .auction {
+    @include container-mobile;
+    padding-bottom: 50px;
+    overflow: hidden;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: lighter;
+    }
+    p {
+      font-size: 1.1rem;
+      padding: 15px 0 30px;
+      color: #555555;
+      line-height: 1.5;
+      a {
+        color: #3e3a3a;
+      }
+    }
+    .auction-items {
+      display: flex;
+      gap: 30px;
+      .item {
+        display: flex;
+        flex-direction: column;
+        background-color: #eeeeee;
+        border-radius: 20px;
+
+        .img-container {
+          max-height: 16.6rem;
+          overflow: hidden;
+        }
+        .info {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 20px;
+
+          .left-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 0.5rem;
+            & :first-child {
+              color: #ff8139;
+              font-size: 0.7rem;
+            }
+            & :nth-child(2) {
+              font-size: 1.2rem;
+            }
+            & :last-child {
+              color: #777777;
+            }
+          }
+        }
+        .right-side {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-end;
+          gap: 0.5rem;
+          & :first-child {
+            color: #777777;
+            font-size: 0.7rem;
+          }
+          & :nth-child(2) {
+            font-size: 1.2rem;
+          }
+          & :last-child {
+            color: #777777;
+          }
+          .eth {
+            display: flex;
+            align-items: center;
+            &::before {
+              content: url(assets/eth.svg);
+              padding-right: 0.5rem;
+            }
+          }
+        }
+      }
     }
   }
 }
