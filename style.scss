@@ -7,7 +7,7 @@
   /*overflow: hidden;*/
 }
 
-@mixin container-mobile($mobile-width: 26rem) {
+@mixin container-mobile($mobile-width: 26.75rem) {
   padding-left: 2rem;
   padding-right: 2rem;
   width: $mobile-width;
@@ -20,6 +20,9 @@ $color-primary-text: #111111;
 $regular-padding-bottom-mobile: 1.5rem;
 
 body {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
   header {
     @include container-mobile;
     display: flex;
@@ -44,7 +47,7 @@ body {
   .sign-up {
     @include container-mobile;
     padding-top: 4rem;
-    padding-right: 6.5rem;
+    padding-right: 7.625rem;
     padding-bottom: 5rem;
     background-image: url(assets/graphic.png);
     background-size: contain;
@@ -143,7 +146,7 @@ body {
     padding-bottom: 3.5rem;
     grid-template-areas: 'Boomerang Blimp' 'qrco Droplet';
     row-gap: 1.5rem;
-    column-gap: 3.5rem;
+    column-gap: 4.4rem;
 
     .Blimp {
       grid-area: Blimp;
@@ -181,7 +184,7 @@ body {
     }
     .auction-items {
       display: flex;
-      gap: 30px;
+      gap: 2.5rem;
       .item {
         display: flex;
         flex-direction: column;
@@ -241,6 +244,97 @@ body {
             }
           }
         }
+      }
+    }
+  }
+  .sign-up-2 {
+    width: 26.75rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-image: url(assets/upsell-footer-image.svg);
+    background-size: 43%;
+    background-repeat: no-repeat;
+    background-position: 17rem 9.375rem;
+    .line {
+      display: flex;
+      justify-content: flex-start;
+      height: 2px;
+      width: 428px;
+      text-align: left;
+      background-color: #777777;
+      opacity: 0.2;
+    }
+    h6 {
+      color: $color-h6;
+      font-size: 1rem;
+      letter-spacing: 0.0938rem;
+      font-weight: bolder;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 3rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: bolder;
+      font-size: 42px;
+      padding: $regular-padding-bottom-mobile 0;
+      color: $color-primary-text;
+      padding-right: 9.625rem;
+      padding-left: 2rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: $color-secondary-text;
+      padding-bottom: $regular-padding-bottom-mobile;
+      padding-right: 12rem;
+      padding-left: 2rem;
+    }
+    .sign-button {
+      margin-left: 2rem;
+      width: 11.4rem;
+      height: 4.5rem;
+      border-radius: 40px;
+      background: white;
+      position: relative;
+      padding-bottom: 8rem;
+      &:before {
+        content: '';
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 555;
+        border-radius: inherit;
+        background: linear-gradient(
+          45deg,
+          rgb(194, 28, 209),
+          red,
+          orange,
+          rgb(197, 178, 69)
+        );
+      }
+      button {
+        position: absolute;
+        width: 10.9rem;
+        height: 4rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 666;
+        border-radius: inherit;
+        background: white;
+        border: none;
+        margin: 4px;
+        font-size: larger;
+        text-align: center;
+        vertical-align: center;
+        font-weight: 500px;
       }
     }
   }

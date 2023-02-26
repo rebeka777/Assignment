@@ -7,10 +7,15 @@
   /*overflow: hidden;*/
 }
 
+body {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+}
 body header {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 26rem;
+  width: 26.75rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -34,10 +39,10 @@ body header .menu span {
 body .sign-up {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 26rem;
+  width: 26.75rem;
   margin: 0 auto;
   padding-top: 4rem;
-  padding-right: 6.5rem;
+  padding-right: 7.625rem;
   padding-bottom: 5rem;
   background-image: url(assets/graphic.png);
   background-size: contain;
@@ -104,7 +109,7 @@ body .sign-up .sign-button button {
 body .free-nft {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 26rem;
+  width: 26.75rem;
   margin: 0 auto;
   color: #111111;
   display: flex;
@@ -126,7 +131,7 @@ body .free-nft p {
 body .companies {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 26rem;
+  width: 26.75rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr, 1fr;
@@ -135,8 +140,8 @@ body .companies {
   padding-bottom: 3.5rem;
   grid-template-areas: "Boomerang Blimp" "qrco Droplet";
   row-gap: 1.5rem;
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
+  -moz-column-gap: 4.4rem;
+       column-gap: 4.4rem;
 }
 body .companies .Blimp {
   grid-area: Blimp;
@@ -157,7 +162,7 @@ body .companies .Boomerang {
 body .auction {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 26rem;
+  width: 26.75rem;
   margin: 0 auto;
   padding-bottom: 50px;
   overflow: hidden;
@@ -177,7 +182,7 @@ body .auction p a {
 }
 body .auction .auction-items {
   display: flex;
-  gap: 30px;
+  gap: 2.5rem;
 }
 body .auction .auction-items .item {
   display: flex;
@@ -236,4 +241,89 @@ body .auction .auction-items .item .right-side .eth {
 body .auction .auction-items .item .right-side .eth::before {
   content: url(assets/eth.svg);
   padding-right: 0.5rem;
+}
+body .sign-up-2 {
+  width: 26.75rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  background-image: url(assets/upsell-footer-image.svg);
+  background-size: 43%;
+  background-repeat: no-repeat;
+  background-position: 17rem 9.375rem;
+}
+body .sign-up-2 .line {
+  display: flex;
+  justify-content: flex-start;
+  height: 2px;
+  width: 428px;
+  text-align: left;
+  background-color: #777777;
+  opacity: 0.2;
+}
+body .sign-up-2 h6 {
+  color: #ff3998;
+  font-size: 1rem;
+  letter-spacing: 0.0938rem;
+  font-weight: bolder;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+}
+body .sign-up-2 h1 {
+  font-size: 2.8rem;
+  font-weight: bolder;
+  font-size: 42px;
+  padding: 1.5rem 0;
+  color: #111111;
+  padding-right: 9.625rem;
+  padding-left: 2rem;
+}
+body .sign-up-2 p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #555555;
+  padding-bottom: 1.5rem;
+  padding-right: 12rem;
+  padding-left: 2rem;
+}
+body .sign-up-2 .sign-button {
+  margin-left: 2rem;
+  width: 11.4rem;
+  height: 4.5rem;
+  border-radius: 40px;
+  background: white;
+  position: relative;
+  padding-bottom: 8rem;
+}
+body .sign-up-2 .sign-button:before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 555;
+  border-radius: inherit;
+  background: linear-gradient(45deg, rgb(194, 28, 209), red, orange, rgb(197, 178, 69));
+}
+body .sign-up-2 .sign-button button {
+  position: absolute;
+  width: 10.9rem;
+  height: 4rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 666;
+  border-radius: inherit;
+  background: white;
+  border: none;
+  margin: 4px;
+  font-size: larger;
+  text-align: center;
+  vertical-align: center;
+  font-weight: 500px;
 }/*# sourceMappingURL=style.css.map */
