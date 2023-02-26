@@ -10,7 +10,7 @@
 body header {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 25rem;
+  width: 26rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -34,10 +34,10 @@ body header .menu span {
 body .sign-up {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 25rem;
+  width: 26rem;
   margin: 0 auto;
   padding-top: 4rem;
-  padding-right: 5.3rem;
+  padding-right: 6.5rem;
   padding-bottom: 5rem;
   background-image: url(assets/graphic.png);
   background-size: contain;
@@ -104,7 +104,7 @@ body .sign-up .sign-button button {
 body .free-nft {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 25rem;
+  width: 26rem;
   margin: 0 auto;
   color: #111111;
   display: flex;
@@ -126,7 +126,7 @@ body .free-nft p {
 body .companies {
   padding-left: 2rem;
   padding-right: 2rem;
-  width: 25rem;
+  width: 26rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr, 1fr;
@@ -135,8 +135,8 @@ body .companies {
   padding-bottom: 3.5rem;
   grid-template-areas: "Boomerang Blimp" "qrco Droplet";
   row-gap: 1.5rem;
-  -moz-column-gap: 2.7rem;
-       column-gap: 2.7rem;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
 }
 body .companies .Blimp {
   grid-area: Blimp;
@@ -153,4 +153,87 @@ body .companies .OpenDoor {
 body .companies .Boomerang {
   grid-area: Boomerang;
   overflow: hidden;
+}
+body .auction {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 26rem;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+body .auction h2 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+body .auction p {
+  font-size: 1.1rem;
+  padding: 15px 0 30px;
+  color: #555555;
+  line-height: 1.5;
+}
+body .auction p a {
+  color: #3e3a3a;
+}
+body .auction .auction-items {
+  display: flex;
+  gap: 30px;
+}
+body .auction .auction-items .item {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+  border-radius: 20px;
+}
+body .auction .auction-items .item .img-container {
+  max-height: 16.6rem;
+  overflow: hidden;
+}
+body .auction .auction-items .item .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+body .auction .auction-items .item .info .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+body .auction .auction-items .item .info .left-side :first-child {
+  color: #ff8139;
+  font-size: 0.7rem;
+}
+body .auction .auction-items .item .info .left-side :nth-child(2) {
+  font-size: 1.2rem;
+}
+body .auction .auction-items .item .info .left-side :last-child {
+  color: #777777;
+}
+body .auction .auction-items .item .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+body .auction .auction-items .item .right-side :first-child {
+  color: #777777;
+  font-size: 0.7rem;
+}
+body .auction .auction-items .item .right-side :nth-child(2) {
+  font-size: 1.2rem;
+}
+body .auction .auction-items .item .right-side :last-child {
+  color: #777777;
+}
+body .auction .auction-items .item .right-side .eth {
+  display: flex;
+  align-items: center;
+}
+body .auction .auction-items .item .right-side .eth::before {
+  content: url(assets/eth.svg);
+  padding-right: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
