@@ -4,13 +4,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  /*overflow: hidden;*/
 }
 
 body {
   background: #ffffff;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 body header {
   padding-left: 2rem;
@@ -21,6 +19,17 @@ body header {
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
+}
+body header nav {
+  display: none;
+}
+body header nav a {
+  color: #3e3a3a;
+  font-size: 1rem;
+  text-decoration: none;
+}
+body header nav :last-child {
+  color: #ff3998;
 }
 body header .menu {
   display: flex;
@@ -47,7 +56,7 @@ body .sign-up {
   background-image: url(assets/graphic.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 190px -20px;
+  background-position: 11.875rem -1.25rem;
 }
 body .sign-up h6 {
   color: #ff3998;
@@ -56,9 +65,8 @@ body .sign-up h6 {
   font-weight: bolder;
 }
 body .sign-up h1 {
-  font-size: 2.8rem;
   font-weight: bolder;
-  font-size: 42px;
+  font-size: 2.625rem;
   padding: 1.5rem 0;
   color: #111111;
 }
@@ -71,7 +79,7 @@ body .sign-up p {
 body .sign-up .sign-button {
   width: 11.4rem;
   height: 4.5rem;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   background: white;
   position: relative;
 }
@@ -100,11 +108,11 @@ body .sign-up .sign-button button {
   border-radius: inherit;
   background: white;
   border: none;
-  margin: 4px;
+  margin: 0.25rem;
   font-size: larger;
   text-align: center;
   vertical-align: center;
-  font-weight: 500px;
+  font-weight: 31.25rem;
 }
 body .free-nft {
   padding-left: 2rem;
@@ -116,17 +124,17 @@ body .free-nft {
   height: 19rem;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 20px;
-  padding-right: 30px;
+  gap: 1.25rem;
+  padding-right: 1.875rem;
   padding-bottom: 1.5rem;
   background: linear-gradient(75deg, #ff7784, #eb9457, #d3c393);
 }
 body .free-nft h2 {
   font-weight: lighter;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 body .free-nft p {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 body .companies {
   padding-left: 2rem;
@@ -164,7 +172,7 @@ body .auction {
   padding-right: 2rem;
   width: 26.75rem;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
   overflow: hidden;
 }
 body .auction h2 {
@@ -173,7 +181,7 @@ body .auction h2 {
 }
 body .auction p {
   font-size: 1.1rem;
-  padding: 15px 0 30px;
+  padding: 0.9375rem 0 1.875rem;
   color: #555555;
   line-height: 1.5;
 }
@@ -188,7 +196,7 @@ body .auction .auction-items .item {
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 body .auction .auction-items .item .img-container {
   max-height: 16.6rem;
@@ -198,7 +206,7 @@ body .auction .auction-items .item .info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.25rem;
 }
 body .auction .auction-items .item .info .left-side {
   display: flex;
@@ -246,7 +254,7 @@ body .sign-up-2 {
   width: 26.75rem;
   margin: 0 auto;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3.5rem;
   background-image: url(assets/upsell-footer-image.svg);
   background-size: 43%;
   background-repeat: no-repeat;
@@ -255,8 +263,8 @@ body .sign-up-2 {
 body .sign-up-2 .line {
   display: flex;
   justify-content: flex-start;
-  height: 2px;
-  width: 428px;
+  height: 0.125rem;
+  width: 26.75rem;
   text-align: left;
   background-color: #777777;
   opacity: 0.2;
@@ -273,11 +281,14 @@ body .sign-up-2 h6 {
 body .sign-up-2 h1 {
   font-size: 2.8rem;
   font-weight: bolder;
-  font-size: 42px;
+  font-size: 2.625rem;
   padding: 1.5rem 0;
   color: #111111;
   padding-right: 9.625rem;
   padding-left: 2rem;
+}
+body .sign-up-2 .desktop-p {
+  display: none;
 }
 body .sign-up-2 p {
   font-size: 1.1rem;
@@ -291,10 +302,10 @@ body .sign-up-2 .sign-button {
   margin-left: 2rem;
   width: 11.4rem;
   height: 4.5rem;
-  border-radius: 40px;
+  border-radius: 2.5rem;
   background: white;
   position: relative;
-  padding-bottom: 8rem;
+  padding-bottom: 8.2rem;
 }
 body .sign-up-2 .sign-button:before {
   content: "";
@@ -321,9 +332,202 @@ body .sign-up-2 .sign-button button {
   border-radius: inherit;
   background: white;
   border: none;
-  margin: 4px;
+  margin: 0.25rem;
   font-size: larger;
   text-align: center;
   vertical-align: center;
-  font-weight: 500px;
+  font-weight: 31.25rem;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3.125rem;
+}
+body footer .footer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 26.75rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 6.25rem;
+}
+body footer .footer .logo-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  color: #555555;
+}
+body footer .footer .logo-socials .logo {
+  padding-bottom: 0.9375rem;
+}
+body footer .footer .socials {
+  display: flex;
+  gap: 0.9375rem;
+  padding-top: 1.25rem;
+}
+body footer .footer .socials .fa-brands {
+  color: #999999;
+}
+body footer .footer .menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 3rem;
+  row-gap: 1.875rem;
+}
+body footer .footer .menu-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+body footer .footer .menu-grid div h6 {
+  padding-bottom: 1.25rem;
+  font-weight: lighter;
+  font-size: 0.85rem;
+  letter-spacing: 0.0625rem;
+}
+body footer .footer .menu-grid div a {
+  text-decoration: none;
+  color: #555555;
+}
+body footer .footer-bottom {
+  color: #999999;
+  padding-left: 2rem;
+}
+body footer .footer-bottom .launch {
+  display: none;
+}
+@media (min-width: 59.375rem) {
+  body body {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  body header {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body header nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.9375rem;
+    padding-right: 3.125rem;
+  }
+  body header .menu {
+    display: none;
+  }
+  body .sign-up {
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    width: 100%;
+    padding-top: 7rem;
+    padding-right: 50%;
+    padding-bottom: 7rem;
+    background-position: right;
+    height: 45rem;
+  }
+  body .sign-up h1 {
+    font-size: 5rem;
+    padding-right: 5rem;
+  }
+  body .sign-up p {
+    padding: 2rem 0 2rem;
+  }
+  body .free-nft {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 0.9375rem;
+    padding: 4rem;
+    width: unset;
+    background-image: url(assets/background.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  body .companies {
+    padding: 7rem 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body .companies .OpenDoor {
+    display: inherit;
+  }
+  body .auction {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 0;
+    width: unset;
+    padding-bottom: 7rem;
+    border-bottom: 0.125rem solid #e4e4e4;
+  }
+  body .auction p {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
+  body .sign-up-2 {
+    width: unset;
+    padding-right: 40%;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-size: contain;
+    background-position: 80%;
+    border-bottom: 0.125rem solid #e4e4e4;
+  }
+  body .sign-up-2 .mobile-p {
+    display: none;
+  }
+  body .sign-up-2 .desktop-p {
+    display: inherit;
+  }
+  body .sign-up-2 p {
+    padding-left: 0;
+  }
+  body .sign-up-2 .line {
+    display: none;
+  }
+  body .sign-up-2 .sign-button {
+    padding-bottom: 7rem;
+    margin-left: 0;
+  }
+  body .sign-up-2 h1 {
+    padding-left: 0;
+  }
+  body .sign-up-2 h6 {
+    padding-left: 0;
+  }
+  body footer {
+    width: 100%;
+    padding-top: 6.25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  body footer .footer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body footer .footer .menu-grid {
+    display: flex;
+    gap: 3.125rem;
+    padding-top: 0;
+  }
+  body footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+  body footer .footer-bottom .launch {
+    display: inherit;
+  }
 }/*# sourceMappingURL=style.css.map */
